@@ -18,10 +18,10 @@
             <div class="logo"><h1>Thoughts of Fais</h1></div>
              <hr>
                 <div class="menu">
-                    <a href="home.html">Home</a> |
+                    <a href="index.html">Home</a> |
                     <a href="about.html">About</a> |
                     <a href="blog.html">Blog</a> |
-                    <a href="suggestions.php">Suggestions</a> |
+                    <a href="suggestions.html">Suggestions</a> |
                     <a href="Rating.html">Rating</a>
                 </div>
             <hr>
@@ -34,7 +34,7 @@
             <center><h3>Give Me an Idea for The Next Blog!</h3></center>
             <br>
             <center>
-                <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
+                <form method="POST" name="suggestions">
                     <div>
                         <label>Nama</label>
                         <br>
@@ -66,45 +66,6 @@
         </div>
 
         <br><br>
-        
-            <center>
-                <?php
-                if(isset($_POST['fname'])){
-                    $nama = $_POST['fname'];
-                    $email = $_POST['femail'];
-                    $number = $_POST['fnumber'];
-                    $saran = $_POST['fsuggest'];
-                    echo "
-                    <hr>
-                    <br><br>
-                    <table>
-                        <tr>
-                            <td>Nama</td>
-                            <td>:</td>
-                            <td>$nama</td>
-                        </tr>
-                        <tr>
-                            <td>Email</td>
-                            <td>:</td>
-                            <td>$email</td>
-                        </tr>
-                        <tr>
-                            <td>No HP</td>
-                            <td>:</td>
-                            <td>$number</td>
-                        </tr>
-                        <tr>
-                            <td>Saran</td>
-                            <td>:</td>
-                            <td>$saran</td>
-                        </tr>
-                    </table>
-                    ";
-                }
-                ?>
-            </center>
-
-            <br><br>
 
         <!--Start footer-->
         <hr>  
